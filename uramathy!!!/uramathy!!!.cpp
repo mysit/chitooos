@@ -23,7 +23,7 @@ void printAns(double** a, int n) {
 
 double** summer(double** a, int n, int col) {
 	for (int i = 0; i < n; i++) {
-		if (i == col) continue;  // пропускаем диагональную строку
+		if (i == col) continue;  // пропускаем диагональную строкуc
 		double factor = a[i][col];
 		for (int j = 0; j < 2 * n; j++) {
 			a[i][j] -= a[col][j] * factor;
@@ -31,7 +31,7 @@ double** summer(double** a, int n, int col) {
 	}
 	return a;
 }
-
+//обновленно на гите
 double**proc(double** a, int n) {
 	double* temp = new double[n];
 	for (int i = 0; i < n; i++) {
